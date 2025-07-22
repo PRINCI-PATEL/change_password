@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Change Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+    <h2>Change Password</h2>
+    <form id="passwordForm">
+
+      <label>Old Password</label>
+      <div class="field-group">
+        <input type="password" id="oldPassword" required>
+        <span class="toggle-icon" onclick="togglePassword('oldPassword', this)">👁️</span>
+      </div>
+
+      <label>New Password</label>
+      <div class="field-group">
+        <input type="password" id="newPassword" required>
+        <span class="toggle-icon" onclick="togglePassword('newPassword', this)">👁️</span>
+      </div>
+
+      <label>Confirm Password</label>
+      <div class="field-group">
+        <input type="password" id="confirmPassword" required>
+        <span class="toggle-icon" onclick="togglePassword('confirmPassword', this)">👁️</span>
+      </div>
+
+      <button type="submit">Change Password</button>
+    </form>
+    <p id="message"></p>
+  </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
